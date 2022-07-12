@@ -7,15 +7,21 @@
 /**
  * struct flags - struct containing flags to "turn on"
  * when a flag specifier is passed to _printf()
+ * @minus: flag for the '-' character
  * @plus: flag for the '+' character
- * @space: flag for the ' ' character
+ * @zero: flag for the '0' character
  * @hash: flag for the '#' character
+ * @space: flag for the ' ' character
+ * @esc_zero: flag for '\0' character
  */
 typedef struct flags
 {
+	int minus;
 	int plus;
+	int zero;
+	int hash
 	int space;
-	int hash;
+	int esc_zero; 
 } flags_t;
 
 /**
