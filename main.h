@@ -19,7 +19,7 @@ typedef struct flags
 	int minus;
 	int plus;
 	int zero;
-	int hash
+	int hash;
 	int space;
 	int esc_zero; 
 } flags_t;

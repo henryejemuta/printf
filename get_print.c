@@ -29,11 +29,10 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'%', print_percent},
 		{'\0', NULL}
 		};
-	int flags = 14;
 
 	register int i;
 
-	for (i = 0; i < flags; i++)
+	for (i = 0; func_arr[i].c != '\0'; i++)
 		if (func_arr[i].c == s)
 			return (func_arr[i].f);
 	return (NULL);

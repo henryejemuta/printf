@@ -14,17 +14,17 @@ int get_flag(char s, flags_t *f)
 	switch (s)
 	{
 		case '-':
-                        f->minus = 1;
-                        i = 1;
-                        break;
+			f->minus = 1;
+			i = 1;
+			break;
 		case '+':
 			f->plus = 1;
 			i = 1;
 			break;
 		case '0':
-                        f->zero = 1;
-                        i = 1;
-                        break;
+			f->zero = 1;
+			i = 1;
+			break;
 		case ' ':
 			f->space = 1;
 			i = 1;
@@ -34,9 +34,9 @@ int get_flag(char s, flags_t *f)
 			i = 1;
 			break;
 		case '\0':
-                        f->esc_zero = 1;
-                        i = 1;
-                        break;
+			f->esc_zero = 1;
+			i = 1;
+			break;
 	}
 	return (i);
 }
